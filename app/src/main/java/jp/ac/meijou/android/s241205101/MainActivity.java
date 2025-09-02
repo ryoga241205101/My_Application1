@@ -32,7 +32,21 @@ public class MainActivity extends AppCompatActivity {
             var text1 = binding.editTextText.getText().toString();
             binding.text.setText(text1);
         });
+        /*
+        binding.editTextText.addTextChangedListener(new TextWatcher() {
+    @Override
+    public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
 
+    }
+    @Override
+    public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+    }
+    @Override
+    public void afterTextChanged(Editable editable) {
+    binding.text.setText(editable.toString());
+    }
+    });*/
         prefDataStore = PrefDataStore.getInstance(this);
         prefDataStore.getString("name")
                 .ifPresent(name -> binding.text.setText(name));
