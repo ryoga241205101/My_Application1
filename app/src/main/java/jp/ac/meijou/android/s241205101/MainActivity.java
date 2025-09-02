@@ -25,6 +25,9 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        binding.text.setText(R.string.text);
+        binding.button.setOnClickListener(view -> {
+            var text = binding.editTextText.getText().toString();
+            binding.text.setText(text);
+        });
     }
 }
