@@ -9,11 +9,32 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="140dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="135dp"
-        android:layout_marginTop="345dp"
+        android:layout_width="291dp"
+        android:layout_height="75dp"
         android:text="TextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="328dp" />
+
+    <Button
+        android:id="@+id/button_OK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginBottom="148dp"
+        android:text="OK"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:text="Cancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/button_OK"
+        app:layout_constraintTop_toTopOf="@+id/button_OK" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
