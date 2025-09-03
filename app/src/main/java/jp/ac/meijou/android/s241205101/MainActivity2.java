@@ -39,5 +39,12 @@ public class MainActivity2 extends AppCompatActivity {
             intent.setData(Uri.parse("https://www.yahoo.co.jp"));
             startActivity(intent);
         });
+
+        binding.buttonSend.setOnClickListener(v -> {
+            var text = binding.editTextText2.getText().toString();
+            var intent = new Intent(this, MainActivity4.class);
+            intent.putExtra("title", text);
+            startActivity(intent);
+        });
     }
 }
